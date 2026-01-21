@@ -1,0 +1,34 @@
+/* цвета */
+
+/* цвет основного текста #757575 */
+/* вторичный цвет текста  #212121 */
+/* белый текст и фон #FFFFFF  */
+/* акцент #2196F3 */
+/* цвет фона шапки и футера #2F303A */
+/*цвет фона секции наша команда и фона радиокнопок #F5F4FA */
+/* цвет ховера кнопки заказать услугу #188CE8 */
+
+/*переменные*/
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --primary-white-color: #ffffff;
+    --head-footer-bgcolor: #2f303a;
+    --secondary-bgcolor: #f5f4fa;
+    --secondary-accent-color: #188ce8;
+}
+
+/*body*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
