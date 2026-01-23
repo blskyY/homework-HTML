@@ -91,13 +91,15 @@ color: var(--primary-white-color);
 }
 
 .feature-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.17;
-    text-align: left;
-    vertical-align: bottom;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
+        color: var(--title-text-color);
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
 
 }
 
