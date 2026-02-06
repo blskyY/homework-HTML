@@ -6,10 +6,12 @@
 --head-footer-bgcolor: #2f303a;
 --secondary-bgcolor: #f5f4fa;
 --secondary-accent-color: #188ce8;
+--topline-color: #ececec;
+--boder-portfolio-color: #eeeeee;
 }
 
 /*body*/
-
+  
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -32,10 +34,56 @@ body {
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 } 
+
+.service-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.impotent {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.services {
+    padding-bottom: 94px;
+}
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.hero-prtf {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.header {
+    border-bottom: 1px solid var(--topline-color);
+}
+
+.container.topline {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-list {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+}
 
 .header-nav-link {
     color: var(--title-text-color);
+}
+
+.header-nav-main .item:not(:first-child) {
+    margin-left: 50px;
 }
 
 .header-nav-main {
@@ -50,18 +98,23 @@ body {
     background-color: var(--head-footer-bgcolor);
 
     text-align: center;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
-color: var(--primary-white-color);
+    width: 696px;
+    color: var(--primary-white-color);
 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.5;
-    vertical-align: top;
     letter-spacing: 0.06em;
 
-    background-color: var(--head-footer-bgcolor);
+    text-transform: uppercase;
+
+    margin: 0 auto 30px;
 }
 
 .hero-button {
@@ -76,6 +129,30 @@ color: var(--primary-white-color);
     text-align: center;
     vertical-align: center;
     letter-spacing: 0.06em;
+
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+}
+
+.hero-button:hover, .hero-button:focus {
+    background-color: var(--secondary-accent-color);
+}
+
+.services-title, .team-title {
+    color: var(--title-text-color);
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        margin-top: 0;
+        margin-bottom: 50px;
 }
 
 .feature-title {
@@ -96,7 +173,12 @@ color: var(--primary-white-color);
     text-align: left;
 }
 
-.services-title {
+.feature-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* .services-title {
     color: var(--title-text-color);
     vertical-align: center;
     text-align: center;
@@ -104,12 +186,12 @@ color: var(--primary-white-color);
     font-size: 36px;
     
 }
-
+*/
 .team {
     background-color: var(--secondary-bgcolor);
 }
 
-.team-title {
+/* .team-title {
         color: var(--title-text-color);
             font-weight: 700;
             font-size: 36px;
@@ -118,10 +200,13 @@ color: var(--primary-white-color);
             vertical-align: top;
             letter-spacing: 0.03em
 }
+*/
 
-.team-member-name {
+.title, .team-member-name, .h2-prtf {
     color: var(--title-text-color);
-    font-weight: 500;
+    
+        margin-top: 0;
+        margin-bottom: 10px;
 }
 
 .team-member-role {
@@ -171,11 +256,24 @@ color: var(--primary-white-color);
     font-style: normal;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 /*portfolio*/
 
 .hero-category-list {
     background-color: white;
     text-align: left;
+}
+
+.сategory:hover, .category:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
 
 .category {
@@ -191,6 +289,10 @@ color: var(--primary-white-color);
     letter-spacing: 0.03em;
 }
 
+.portfolio-list .title {
+    margin-bottom: 4px;
+}
+
 .hero-prtf  {
     background-color: white;
 }
@@ -201,16 +303,6 @@ color: var(--primary-white-color);
 
 .link-prtf {
     text-decoration: none;
-}
-
-.link-prtf > .h2-prtf {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    text-align: left;
-    vertical-align: top;
-    letter-spacing: 0.06em;
-    color: var(--title-text-color);
 }
 
 .link-prtf > .p-prtf {
