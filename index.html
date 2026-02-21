@@ -31,10 +31,23 @@
             </ul>
         </nav>
         <ul class="contact list">
-            <li class="item"><a href="mailto:info@devstudio.com"
-                    class="link">info@devstudio.com</a></li>
-            <li class="item"><a href="tel:+380228228228"
-                    class="link">+38 022 822 82 28</a></li>
+            <li class="item contact-link">
+                <a href="mailto:info@devstudio.com"
+                    class="link"> <svg class="icon tell">
+                        <use href="./images/symbol-defs.svg#icon-email"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+
+            <li class="item">
+                <a href="tel:+380228228228" class="link contact-link">
+                    <svg class="icon tell">
+                        <use href="./images/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                    +38 022 822 82 28
+                </a>
+            </li>
         </ul>
         </div>
     </header>
@@ -45,25 +58,54 @@
                 <h1 class="hero-title">Ефективні рішення <br> для вашого бізнесу</h1>
                 <button type="button" class="hero-button">Замовити послугу</button>
             </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="close-button" data-modal-close>
+                        <svg class="close-icon" width="11" height="11">
+                            <use href="./images/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </section>
         <section class="impotent">
             <div class="container">
             <ul class="features-list list">
                 <li class="feature-item">
+                    <div class="icon-impotent">
+                        <svg class="antenna" width="65.32" height="70">
+                            <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                        </svg>
+                    </div>
                     <h2 class="feature-title title">Увага до деталей</h2>
                     <p class="feature-text">Ідейні міркування, і навіть початок повсякденної роботі з формування позиції
                     </p>
                 </li>
                 <li class="feature-item">
+                    <div class="icon-impotent">
+                        <svg class="clock" width="66.96" height="70">
+                            <use href="./images/symbol-defs.svg#icon-clock"></use>
+                        </svg>
+                    </div>
                     <h2 class="feature-title title">Пунктуальність</h2>
                     <p class="feature-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе
                     </p>
                 </li>
                 <li class="feature-item">
+                    <div class="icon-impotent">
+                        <svg class="diagram" width="70" height="53.69">
+                            <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                        </svg>
+                    </div>
                     <h2 class="feature-title title">Планування</h2>
                     <p class="feature-text">Також консультація з широким активом значною мірою зумовлює</p>
                 </li>
                 <li class="feature-item">
+                     <div class="icon-impotent">
+                        <svg class="astronaut" width="70" height="70">
+                            <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                        </svg>
+                    </div>
                     <h2 class="feature-title title">Сучасні Технології</h2>
                     <p class="feature-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань
                     </p>
