@@ -395,6 +395,7 @@ body {
 
     width: 528px;
     height: 581px;
+    padding: 40px 39px 40px 41px;
 
     background: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -444,16 +445,186 @@ body {
     transform: translate(-50%, -50%);
 
     fill: currentColor;
-
-    /* width: 11px;
-  height: 11px; */
 }
 
-.hero-button:hover,
-.hero-button:focus {
+/* Форма */
+
+.form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+
+    margin: 0 0 12px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field.input {
+    position: relative;
+
+    margin-bottom: 10px;
+}
+
+.form-field.textarea {
+    margin-bottom: 20px;
+}
+
+.form-field span {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+
+.form-field input,
+.comment {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color 250ms linear;
+}
+
+.form-field input {
+    margin: 0;
+    padding: 11px 42px;
+}
+
+.icon-form {
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
+
+    display: inline-block;
+
+    transition: fill 250ms linear;
+}
+
+.form-field:hover,
+.form-field:focus {
+    fill: var(--accent-color);
+
+    cursor: pointer;
+}
+
+.form-field:hover input,
+.form-field:focus input,
+.form-field:hover textarea,
+.form-field:focus textarea {
+    border-color: var(--accent-color);
+
+    cursor: pointer;
+}
+
+.form-field:focus-within>input,
+.form-field:focus-within>textarea {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.form-field:focus-within>.icon-form {
+    fill: var(--accent-color);
+}
+
+.comment {
+    width: 448px;
+    height: 120px;
+
+    margin: 0;
+    padding: 12px 16px;
+}
+
+.comment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+.checkbox-field {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.link-checkbox {
+    color: var(--accent-color);
+}
+
+.icon-checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8.38px;
+
+    border: 2px solid #2a2a2a;
+    border-radius: 2px;
+
+    transition: background-color 250ms var(--function-animation),
+        background-image 250ms var(--function-animation);
+}
+
+.checkbox:checked+.icon-checkbox {
+    border-color: transparent;
+    background-color: var(--accent-color);
+    background-image: url("../images/full-check.svg");
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.send-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.89;
+    letter-spacing: 0.06em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    display: block;
+    min-width: 200px;
+    height: 50px;
+
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+
+    cursor: pointer;
+
+    transition: background-color 250ms var(--function-animation);
+}
+
+.send-button:hover,
+.send-button:focus {
     background-color: var(--secondary-accent-color);
 }
-
 /* features */
 
 .impotent {
