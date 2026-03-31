@@ -1061,25 +1061,40 @@ textarea {
     padding: 60px 0;
 }
 
-/* Контейнер футера */
+/* контейнер */
 .container.bottom {
     display: flex;
     align-items: baseline;
 }
 
-/* Отступ между колонками */
-.container.bottom .bottom-box:not(:last-child) {
+/* отступы между колонками */
+.bottom-box:not(:last-child) {
     margin-right: 70px;
 }
 
-/* Логотип */
-.logo.white {
-    display: block;
-    margin-bottom: 20px;
-    color: var(--primary-white-color);
+.contact-box {
+    margin-right: 93px;
 }
 
-/* Адрес */
+/* логотип */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+}
+
+.logo.white {
+    color: #ffffff;
+}
+
+.logo-accent {
+    color: #2196f3;
+}
+/* адрес */
 .adress {
     padding: 0;
     margin: 0;
@@ -1120,7 +1135,7 @@ textarea {
     color: var(--accent-color);
 }
 
-/* Заголовок соцсетей */
+/* текст */
 .text-footer {
     margin-bottom: 20px;
 
@@ -1133,49 +1148,91 @@ textarea {
     color: var(--primary-white-color);
 }
 
-/* Соцсети */
-.footer .social-contact {
+/* соцсети */
+.social-contact {
     display: flex;
     gap: 10px;
     padding: 0;
     margin: 0;
 }
 
-.link-contact.footer-contact {
+.footer-contact {
     display: flex;
     align-items: center;
     justify-content: center;
 
     width: 44px;
     height: 44px;
-    border-radius: 50%;
 
-    color: var(--primary-white-color);
+    border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-white-color);
 
     transition: background-color 250ms var(--function-animation);
 }
 
-.link-contact.footer-contact:hover,
-.link-contact.footer-contact:focus {
+.footer-contact:hover,
+.footer-contact:focus {
     background-color: var(--accent-color);
 }
 
 .icon-contact {
     fill: currentColor;
 }
-/*
-.footer-adress-link {
-    color: var(--primary-white-color);
-    font-size: 14px;
-    line-height: 1.7;
-    text-align: left;
-    vertical-align: top;
-    letter-spacing: 0.03em;
-    font-style: normal;
+
+/* ===== ФОРМА ФУТЕРА ===== */
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.footer-link {
+/* INPUT */
+.footer-form .mail-footer {
+    width: 358px;
+    height: 50px;
+
+    padding: 0 16px;
+
+    color: #ffffff;
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    outline: none;
+}
+
+/* placeholder */
+.footer-form .mail-footer::placeholder {
     color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
+}
+
+/* BUTTON */
+.footer-form .footer-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    height: 50px;
+    padding: 0 28px;
+
+    background-color: #2196f3;
+    color: #fff;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+/* hover */
+.footer-form .footer-button:hover {
+    background-color: #188ce8;
+}
+
+/* иконка */
+.footer-button svg {
+    fill: currentColor;
 }
