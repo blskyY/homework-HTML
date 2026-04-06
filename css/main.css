@@ -1,0 +1,114 @@
+@import '/css/styles.css';
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --head-footer-bgcolor: #2f303a;
+  --secondary-bgcolor: #f5f4fa;
+  --secondary-accent-color: #188ce8;
+  --topline-color: #ececec;
+  --boder-portfolio-color: #eeeeee;
+  --client-color: #afb1b8;
+  --function-animation: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  border-bottom: 1px solid var(--topline-color);
+}
+
+.nav-topline {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav__item:not(:first-child) {
+  margin-left: 50px;
+}
+.site-nav__link {
+  padding: 32px 0;
+  color: var(--title-text-color);
+}
+.site-nav__link:hover {
+  color: var(--accent-color);
+}
+.site-nav__link.current {
+  color: var(--accent-color);
+}
+
+.hero {
+  text-align: center;
+  max-width: 1600px;
+  padding: 200px 0;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0)), url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+}
+.hero-title {
+  width: 696px;
+  margin: 0 auto 30px;
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  text-transform: uppercase;
+}
+.hero-button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 32px;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: var(--head-footer-bgcolor);
+  padding: 60px 0;
+}
+
+.footer-form {
+  display: flex;
+  gap: 12px;
+}
+.footer-form__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer-form__button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0 28px;
+}/*# sourceMappingURL=main.css.map */

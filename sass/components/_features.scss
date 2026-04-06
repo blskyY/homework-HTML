@@ -1,0 +1,16 @@
+.features-list {
+    display: flex;
+    gap: 30px;
+}
+
+.feature-item {
+    flex: 1;
+}
+
+.feature-title {
+    font-weight: 700;
+}
+
+.feature-text {
+    font-size: 14px;
+}

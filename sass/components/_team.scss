@@ -1,0 +1,15 @@
+.team {
+    padding: 94px 0;
+    background: var(--secondary-bgcolor);
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-member {
+    width: 270px;
+    background: white;
+    text-align: center;
+}

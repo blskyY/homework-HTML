@@ -1,0 +1,15 @@
+.clients {
+    padding: 94px 0;
+}
+
+.client {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.link-client {
+    border: 1px solid var(--client-color);
+    width: 170px;
+    height: 92px;
+}
