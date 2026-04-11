@@ -1,9 +1,33 @@
 .footer {
-    background: var(--head-footer-bgcolor);
-    padding: 60px 0;
+  background-color: $head-footer-bgcolor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__bottom {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
-.footer-form {
-    display: flex;
-    gap: 12px;
+.contact-box {
+  width: 206px;
+  height: 80px;
+  &__text {
+    @extend %box-text;
+  }
+}
+
+.mail-box {
+  margin-left: auto;
+  margin-right: 0;
+  &__text {
+    @extend %box-text;
+  }
+}
+
+.bottom-box {
+  margin-right: 70px;
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
 }

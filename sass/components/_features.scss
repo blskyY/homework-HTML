@@ -1,16 +1,41 @@
-.features-list {
-    display: flex;
-    gap: 30px;
-}
+.skill {
+  @include centeredFlex();
+  @extend %list;
 
-.feature-item {
-    flex: 1;
-}
+  &__icon {
+    @include centeredFlex();
 
-.feature-title {
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    height: 120px;
+  }
+
+  &__title {
+    @extend %title;
+
     font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    text-align: left;
+    letter-spacing: 0.03em;
+
+     text-transform: uppercase;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__item {
+    width: 270px;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
-.feature-text {
-    font-size: 14px;
+.invisible-title {
+  @extend %visually-hidden;
 }

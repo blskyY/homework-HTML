@@ -1,0 +1,36 @@
+.adress {
+  @extend %list;
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.adress__link {
+  @extend %link;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+
+  transition: color 250ms $function-animation;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.adress__link--post {
+  color: $primary-white-color;
+
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: left;
+  letter-spacing: 0.03em;
+
+  transition: color 250ms $function-animation;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

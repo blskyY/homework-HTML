@@ -1,0 +1,31 @@
+.close-button {
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+  background: $primary-white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+
+  transition: color 250ms $function-animation, border 250ms $function-animation;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $secondary-accent-color;
+    color: $accent-color;
+  }
+
+  &__icon {
+    @extend %position-absolute;
+
+    fill: currentColor;
+  }
+}

@@ -1,22 +1,36 @@
 .hero {
-    text-align: center;
-    padding: 200px 0;
+  text-align: center;
 
-    background-image:
-        linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0)),
-        url('../images/hero-bg.jpg');
+  max-width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/imgbg.jpg");
+  background-color: #c4c4c4;
 
-    &-title {
-        font-size: 44px;
-        color: white;
-        margin-bottom: 30px;
-    }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-    &-button {
-        background: var(--accent-color);
-        color: white;
-        padding: 10px 32px;
-    }
+  &__title {
+    width: 696px;
+    color: $primary-white-color;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+
+    text-transform: uppercase;
+
+    margin: 0 auto 30px;
+  }
 }

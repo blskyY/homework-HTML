@@ -1,15 +1,32 @@
-.clients {
-    padding: 94px 0;
-}
-
 .client {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
+  display: flex;
+  @extend %list;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+    padding-bottom: 0;
+  }
+  &__icon {
+    fill: currentColor;
+  }
 }
 
-.link-client {
-    border: 1px solid var(--client-color);
-    width: 170px;
-    height: 92px;
+.client__link {
+  @include centeredFlex();
+  @extend %link;
+
+  border: 1px solid $client-color;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  color: $client-color;
+
+  transition: color 250ms $function-animation,
+    border-color 250ms $function-animation;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
 }

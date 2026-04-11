@@ -1,0 +1,41 @@
+.works-list {
+  @include centeredFlex();
+  @extend %list;
+
+&__activity:not(:last-child) {
+  margin-right: 30px;
+}}
+
+.activity {
+&__thumb {
+  position: relative;
+}
+&__work-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+ @include centeredFlex();
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  width: 370px;
+  height: 70px;
+  color: $primary-white-color;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+&__text {
+  margin: 0;
+}
+
+&__card {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+}
